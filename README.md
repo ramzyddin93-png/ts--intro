@@ -41,9 +41,9 @@ Denna uppgift är en introduktion till TypeScript och låter er utforska grunder
    ```
 
 7. Ändra `module` till `"module": "esnext"` och lägg till `"moduleResolution": "bundler"`
-8. Avkommentera `"rootDir": "./src"`och `"outDir": "./dist"`. Detta betyder att alla TypeScript-filer inuti mappen `src` kommer konverteras till vanlig JavaScript i mappen `dist`. Innehållet i `dist` kan sedan deployas och köras i webbläsaren utan problem. Webbläsaren kan inte tolka TypeScript
-9. Kör sedan test-skriptet ni skapade ovan, `npm run tsc`för att konvertera dina TypeScript filer. Eftersom det innehåller `--watch`-flaggan kommer en ny konvertering göras varje gång ni sparar en ändring. Eftersom som innehållet i `src` är så pass litet kommer ändringarna konverteras nästintill omedelbart
-10. Skapa en `.ts`-fil i mappen vars innehåll "bevakas" och konverteras till `.js-filer` i `dist`. Klistra in följande kod:
+8. Avkommentera `"rootDir": "./src"`och `"outDir": "./dist"`. Detta betyder att alla TypeScript-filer inuti mappen `src` kommer kompileras till vanlig JavaScript i mappen `dist`. Innehållet i `dist` kan sedan deployas och köras i webbläsaren utan problem. Webbläsaren kan inte tolka TypeScript
+9. Kör sedan test-skriptet ni skapade ovan, `npm run tsc`för att kompliera dina TypeScript filer. Eftersom det innehåller `--watch`-flaggan kommer en ny kompilering göras varje gång ni sparar en ändring. Eftersom som innehållet i `src` är så pass litet kommer ändringarna kompileras nästintill omedelbart
+10. Skapa en `.ts`-fil i mappen vars innehåll "bevakas" och kompileras till JavaScript i `dist`. Klistra in följande kod:
 
 ```js
 // en kvittogenerator
@@ -87,7 +87,7 @@ printReceipt("alex", "199", 0.25, "STUDENT");
 - TypeScript är installerat som dev dependency och initierat
 - `tsconfig.json` innehåller allt som nämns i punkt 6 och 7
 - Alla TS-errors i filen/filerna ni skapade är lösta
-- TypeScript konverterar era TS-filer och lägger dem i `dist` och uppdaterar processen varje gång en ändring sparas
+- TypeScript kompilerar era TS-filer och lägger dem i `dist` och uppdaterar processen varje gång en ändring sparas
 
 ## 🎁 Bonusuppgifter
 
