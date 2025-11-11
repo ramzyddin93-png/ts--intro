@@ -1,0 +1,23 @@
+{
+  "name": "ts--intro",
+  "version": "1.0.0",
+  "description": "Denna uppgift är en introduktion till TypeScript och låter er utforska grunderna i typad JavaScript. Ni kommer att sätta upp ett TypeScript-projekt, konfigurera kompilatorn och öva på att skriva typad kod. Genom praktiska övningar får ni lära er hur TypeScript hjälper till att hitta fel innan koden körs och gör er kod mer stabil och skalbar. **Rekommenderas att göras i grupp**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "tsc": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chas-academy/ts--intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chas-academy/ts--intro/issues"
+  },
+  "homepage": "https://github.com/chas-academy/ts--intro#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
